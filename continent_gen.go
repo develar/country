@@ -2,22 +2,6 @@ package country
 
 var (
 
-	// Asia - the continent
-	Asia = Continent{
-		Code:    "AS",
-		Slug:    "asian",
-		Name:    "Asia",
-		Demonym: "asian",
-	}
-
-	// Africa - the continent
-	Africa = Continent{
-		Code:    "AF",
-		Slug:    "africa",
-		Name:    "Africa",
-		Demonym: "african",
-	}
-
 	// Antarctica - the continent
 	Antarctica = Continent{
 		Code:    "AN",
@@ -58,14 +42,30 @@ var (
 		Demonym: "south american",
 	}
 
+	// Asia - the continent
+	Asia = Continent{
+		Code:    "AS",
+		Slug:    "asian",
+		Name:    "Asia",
+		Demonym: "asian",
+	}
+
+	// Africa - the continent
+	Africa = Continent{
+		Code:    "AF",
+		Slug:    "africa",
+		Name:    "Africa",
+		Demonym: "african",
+	}
+
 	// Continents maps a continent code to its continent.
 	Continents = map[string]Continent{
-		"AS": Asia,
-		"AF": Africa,
-		"AN": Antarctica,
 		"EU": Europe,
 		"OC": Oceania,
 		"NA": NorthAmerica,
 		"SA": SouthAmerica,
+		"AS": Asia,
+		"AF": Africa,
+		"AN": Antarctica,
 	}
 )

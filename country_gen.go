@@ -326,7 +326,7 @@ var (
 
 	// BI is "Burundi".
 	BI = Country{
-		Capital:       "Bujumbura",
+		Capital:       "Gitega",
 		CallingCode:   "257",
 		CurrencyCode:  "BIF",
 		CurrencyName:  "Franc",
@@ -496,8 +496,8 @@ var (
 	BY = Country{
 		Capital:       "Minsk",
 		CallingCode:   "375",
-		CurrencyCode:  "BYR",
-		CurrencyName:  "Ruble",
+		CurrencyCode:  "BYN",
+		CurrencyName:  "Belarusian ruble",
 		ContinentCode: "EU",
 		ISO:           "BY",
 		ISO3:          "BLR",
@@ -592,7 +592,7 @@ var (
 
 	// CH is "Switzerland".
 	CH = Country{
-		Capital:       "Berne",
+		Capital:       "Bern",
 		CallingCode:   "41",
 		CurrencyCode:  "CHF",
 		CurrencyName:  "Franc",
@@ -716,7 +716,7 @@ var (
 		TLD:           ".cu",
 	}
 
-	// CV is "Cape Verde".
+	// CV is "Cabo Verde".
 	CV = Country{
 		Capital:       "Praia",
 		CallingCode:   "238",
@@ -726,7 +726,7 @@ var (
 		ISO:           "CV",
 		ISO3:          "CPV",
 		ISONum:        132,
-		Name:          "Cape Verde",
+		Name:          "Cabo Verde",
 		TLD:           ".cv",
 	}
 
@@ -750,7 +750,7 @@ var (
 		CallingCode:   "61",
 		CurrencyCode:  "AUD",
 		CurrencyName:  "Dollar",
-		ContinentCode: "AS",
+		ContinentCode: "OC",
 		ISO:           "CX",
 		ISO3:          "CXR",
 		ISONum:        162,
@@ -772,7 +772,7 @@ var (
 		TLD:           ".cy",
 	}
 
-	// CZ is "Czech Republic".
+	// CZ is "Czechia".
 	CZ = Country{
 		Capital:       "Prague",
 		CallingCode:   "420",
@@ -782,7 +782,7 @@ var (
 		ISO:           "CZ",
 		ISO3:          "CZE",
 		ISONum:        203,
-		Name:          "Czech Republic",
+		Name:          "Czechia",
 		TLD:           ".cz",
 	}
 
@@ -1446,7 +1446,7 @@ var (
 
 	// IM is "Isle of Man".
 	IM = Country{
-		Capital:       "Douglas, Isle of Man",
+		Capital:       "Douglas",
 		CallingCode:   "+44-1624",
 		CurrencyCode:  "GBP",
 		CurrencyName:  "Pound",
@@ -1754,7 +1754,7 @@ var (
 
 	// KZ is "Kazakhstan".
 	KZ = Country{
-		Capital:       "Astana",
+		Capital:       "Nur-Sultan",
 		CallingCode:   "7",
 		CurrencyCode:  "KZT",
 		CurrencyName:  "Tenge",
@@ -1868,8 +1868,8 @@ var (
 	LT = Country{
 		Capital:       "Vilnius",
 		CallingCode:   "370",
-		CurrencyCode:  "LTL",
-		CurrencyName:  "Litas",
+		CurrencyCode:  "EUR",
+		CurrencyName:  "Euro",
 		ContinentCode: "EU",
 		ISO:           "LT",
 		ISO3:          "LTU",
@@ -1896,8 +1896,8 @@ var (
 	LV = Country{
 		Capital:       "Riga",
 		CallingCode:   "371",
-		CurrencyCode:  "LVL",
-		CurrencyName:  "Lat",
+		CurrencyCode:  "EUR",
+		CurrencyName:  "Euro",
 		ContinentCode: "EU",
 		ISO:           "LV",
 		ISO3:          "LVA",
@@ -1908,7 +1908,7 @@ var (
 
 	// LY is "Libya".
 	LY = Country{
-		Capital:       "Tripolis",
+		Capital:       "Tripoli",
 		CallingCode:   "218",
 		CurrencyCode:  "LYD",
 		CurrencyName:  "Dinar",
@@ -2018,7 +2018,7 @@ var (
 		TLD:           ".mh",
 	}
 
-	// MK is "Macedonia".
+	// MK is "North Macedonia".
 	MK = Country{
 		Capital:       "Skopje",
 		CallingCode:   "389",
@@ -2028,7 +2028,7 @@ var (
 		ISO:           "MK",
 		ISO3:          "MKD",
 		ISONum:        807,
-		Name:          "Macedonia",
+		Name:          "North Macedonia",
 		TLD:           ".mk",
 	}
 
@@ -2062,7 +2062,7 @@ var (
 
 	// MN is "Mongolia".
 	MN = Country{
-		Capital:       "Ulan Bator",
+		Capital:       "Ulaanbaatar",
 		CallingCode:   "976",
 		CurrencyCode:  "MNT",
 		CurrencyName:  "Tugrik",
@@ -2120,7 +2120,7 @@ var (
 	MR = Country{
 		Capital:       "Nouakchott",
 		CallingCode:   "222",
-		CurrencyCode:  "MRO",
+		CurrencyCode:  "MRU",
 		CurrencyName:  "Ouguiya",
 		ContinentCode: "AF",
 		ISO:           "MR",
@@ -2790,7 +2790,7 @@ var (
 
 	// SG is "Singapore".
 	SG = Country{
-		Capital:       "Singapur",
+		Capital:       "Singapore",
 		CallingCode:   "65",
 		CurrencyCode:  "SGD",
 		CurrencyName:  "Dollar",
@@ -2984,7 +2984,7 @@ var (
 		TLD:           ".sy",
 	}
 
-	// SZ is "Swaziland".
+	// SZ is "Eswatini".
 	SZ = Country{
 		Capital:       "Mbabane",
 		CallingCode:   "268",
@@ -2994,7 +2994,7 @@ var (
 		ISO:           "SZ",
 		ISO3:          "SWZ",
 		ISONum:        748,
-		Name:          "Swaziland",
+		Name:          "Eswatini",
 		TLD:           ".sz",
 	}
 
@@ -3031,7 +3031,7 @@ var (
 		Capital:       "Port-aux-Francais",
 		CallingCode:   "",
 		CurrencyCode:  "EUR",
-		CurrencyName:  "Euro  ",
+		CurrencyName:  "Euro",
 		ContinentCode: "AN",
 		ISO:           "TF",
 		ISO3:          "ATF",
@@ -3096,7 +3096,7 @@ var (
 		TLD:           ".tk",
 	}
 
-	// TL is "East Timor".
+	// TL is "Timor Leste".
 	TL = Country{
 		Capital:       "Dili",
 		CallingCode:   "670",
@@ -3106,7 +3106,7 @@ var (
 		ISO:           "TL",
 		ISO3:          "TLS",
 		ISONum:        626,
-		Name:          "East Timor",
+		Name:          "Timor Leste",
 		TLD:           ".tl",
 	}
 
@@ -3224,7 +3224,7 @@ var (
 
 	// UA is "Ukraine".
 	UA = Country{
-		Capital:       "Kiev",
+		Capital:       "Kyiv",
 		CallingCode:   "380",
 		CurrencyCode:  "UAH",
 		CurrencyName:  "Hryvnia",
@@ -3255,7 +3255,7 @@ var (
 		Capital:       "",
 		CallingCode:   "1",
 		CurrencyCode:  "USD",
-		CurrencyName:  "Dollar ",
+		CurrencyName:  "Dollar",
 		ContinentCode: "OC",
 		ISO:           "UM",
 		ISO3:          "UMI",
@@ -3338,8 +3338,8 @@ var (
 	VE = Country{
 		Capital:       "Caracas",
 		CallingCode:   "58",
-		CurrencyCode:  "VEF",
-		CurrencyName:  "Bolivar",
+		CurrencyCode:  "VES",
+		CurrencyName:  "Bolivar Soberano",
 		ContinentCode: "SA",
 		ISO:           "VE",
 		ISO3:          "VEN",
@@ -3478,7 +3478,7 @@ var (
 	ZM = Country{
 		Capital:       "Lusaka",
 		CallingCode:   "260",
-		CurrencyCode:  "ZMK",
+		CurrencyCode:  "ZMW",
 		CurrencyName:  "Kwacha",
 		ContinentCode: "AF",
 		ISO:           "ZM",

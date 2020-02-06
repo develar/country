@@ -3,8 +3,11 @@ package main
 import (
 	"encoding/csv"
 	"fmt"
-	"go/format"
-	"os"
+  "github.com/pkg/errors"
+  "go/format"
+  "io"
+  "log"
+  "os"
 	"strconv"
 	"strings"
 )
@@ -43,7 +46,12 @@ var (
 )
 
 func main() {
-	saveCode("country", generateCountries(loadCountries()))
+  countries, err := loadCountries()
+  if err != nil {
+    log.Fatal(err)
+  }
+
+  saveCode("country", generateCountries(countries))
 	saveCode("continent", generateContinents())
 }
 
@@ -83,7 +91,7 @@ func generateContinents() (out string) {
 	return
 }
 
-func loadCountries() (res []country) {
+func loadCountries() ([]country, error) {
 	file, err := os.Open("countries.csv")
 	if err != nil {
 		panic(err)
@@ -93,18 +101,27 @@ func loadCountries() (res []country) {
 	reader := csv.NewReader(file)
 	reader.Comma = '\t'
 	reader.Comment = '#'
-	records, err := reader.ReadAll()
-	if err != nil {
-		panic(err)
-	}
 
-	for _, record := range records {
-		continent, ok := continents[record[8]]
+	result := make([]country, 0, 200)
+	for {
+    record, err := reader.Read()
+    if err != nil {
+      if err == io.EOF {
+        return result, nil
+      }
+
+      if err, ok := err.(*csv.ParseError); !ok || err.Err != csv.ErrFieldCount {
+        return result, err
+      }
+    }
+
+    continent, ok := continents[record[8]]
 		if !ok {
-			panic("continent not found for " + record[10])
+		  return result, errors.New("continent not found for " + record[10])
 		}
+
 		isoNum, _ := strconv.Atoi(record[2])
-		res = append(res, country{
+		result = append(result, country{
 			ISO:           record[0],
 			ISO3:          record[1],
 			ISONum:        isoNum,
@@ -118,7 +135,7 @@ func loadCountries() (res []country) {
 		})
 	}
 
-	return
+  return result, nil
 }
 
 func generateCountries(countries []country) (out string) {
